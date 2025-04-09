@@ -1,0 +1,19 @@
+{
+    "name": "R + DESeq2 + Jupyter",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        }
+      }
+    },
+    "forwardPorts": [8888],
+    "postCreateCommand": "R -e 'IRkernel::installspec(user=FALSE)'",
+    "mounts": [
+      "source=${localWorkspaceFolder},target=/home/rstudio/work,type=bind"
+    ],
+    "remoteUser": "rstudio"
+  }
