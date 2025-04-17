@@ -1,4 +1,4 @@
-#Trabalho 02 - Interações proteína-proteína
+# Trabalho 02 - Interações proteína-proteína
 
 ## Abordagem e técnicas utilizadas
 Foi utilizado a base de dados STRING das PPI da espécie _Homo Sapiens_
